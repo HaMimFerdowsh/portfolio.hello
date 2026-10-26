@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Md. Ha-Mim Ferdowsh</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <div class="shell">
+    <aside class="side">
+      <div class="brand"><span class="mark" aria-hidden="true"></span>Md. Ha-Mim Ferdowsh</div>
+      <button class="kbtn" id="palBtn" type="button" aria-label="Open quick jump menu"><span class="kt">Quick
+          jump</span><kbd id="kbdHint">Ctrl K</kbd><svg class="kicon" width="16" height="16" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"
+          style="display:none">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg></button>
+      <nav class="nav" aria-label="Sections">
+        <a href="#overview" class="on">Overview</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <!-- <a href="#experience">Experience</a> -->
+        <!-- <a href="#gear">Gear</a> -->
+        <!-- <a href="#writing">Writing</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="side-foot">
+        <span class="status ok"><span class="pulse" aria-hidden="true"></span>open to work</span>
+        <button class="theme-btn" id="themeBtn" type="button"
+          aria-label="Switch between dark and light theme">theme</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section id="overview">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow rise d1"><span class="pulse" aria-hidden="true"></span>Available for new work</span>
+            <h1 class="rise d2">Full-Stack Developer <span class="grad">Obsessed with Tools That Get Out of the
+                Way.</span></h1>
+            <p class="lead rise d3">I build web apps and SaaS products that are reliable from the first release to the
+              thousandth deploy. I care about clean architecture, because the code behind a product should be as well
+              made as the product itself. I'm open to new projects and teams where good engineering matters.</p>
+            <div class="cta rise d4">
+              <a class="btn primary" href="#projects">See projects <span class="arr" aria-hidden="true">→</span></a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="win rise d3" role="img"
+            aria-label="Code window showing a profile object with name, role, focus areas and availability">
+            <div class="win-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span
+                class="name">profile.ts</span></div>
+            <pre class="code"
+              aria-hidden="true"><span class="l"><span class="k">const</span> engineer = {</span><span class="l">  name: <span class="s">"Md. Ha-Mim Ferdowsh"</span>,</span><span class="l">  role: <span class="s">"Full-Stack Developer"</span>,</span><span class="l">  focus: [<span class="s">"Web Apps"</span>, <span class="s">"SaaS"</span>, <span class="s">"Clean Architecture"</span>],</span><span class="l">  stack: [<span class="s">"React"</span>, <span class="s">"FastAPI"</span>, <span class="s">"PostgreSQL"</span>],</span><span class="l">  location: <span class="s">"Dhaka, Bangladesh"</span>,</span><span class="l">  loves: <span class="s">"gadgets"</span>,</span><span class="l">  available: <span class="w">true</span>,</span><span class="l">};</span><span class="l"><span class="c">// ready to ship</span> <span class="caret"></span></span></pre>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="tile spot"><span class="tk">Years shipping</span><span class="v">1 year+</span></div>
+          <div class="tile spot"><span class="tk">Products launched</span><span class="v">1</span></div>
+          <div class="tile spot"><span class="tk">Open-source repos</span><span class="v">9</span></div>
+          <div class="tile spot"><span class="tk">Status</span><span class="v small ok">● Available</span></div>
+        </div>
+
+        <div class="now">
+          <div><span class="lab">Building</span>
+            <p>Audit Log Service</p>
+          </div>
+          <div><span class="lab">Learning</span>
+            <p>Numpy for Meachine Learning</p>
+          </div>
+          <div><span class="lab">Tinkering with</span>
+            <p>DIY rover robot with a web control panel</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="strip" aria-label="Technologies I use">
+        <div class="track" aria-hidden="true">
+          <span>Python</span><span>C++</span><span>C</span><span>TypeScript</span><span>JavaScript</span><span>React</span><span>HTML</span><span>CSS</span><span>Tailwind
+            CSS</span><span>Bootstrap</span><span>React
+            Toastify</span><span>FastAPI</span><span>Postgres</span><span>DSA</span>
+          <span>Python</span><span>C++</span><span>C</span><span>TypeScript</span><span>JavaScript</span><span>React</span><span>HTML</span><span>CSS</span><span>Tailwind
+            CSS</span><span>Bootstrap</span><span>React
+            Toastify</span><span>FastAPI</span><span>Postgres</span><span>DSA</span>
+        </div>
+      </div>
+
+      <section id="projects">
+        <div class="sec-head">
+          <div class="crumb">portfolio / <b>projects</b></div>
+          <h2>Things I built and shipped</h2>
+          <p>A selection of work, from web apps to firmware. Swap in your own.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="chip" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          <button class="chip" type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+        </div>
+        <div class="gridwrap">
+          <div class="grid" id="grid">
+            <article class="card spot feat" data-cat="web">
+              <div class="shot" role="img" aria-label="Screenshot of Load Shedding Management System">
+                <img src="img/load-shedding.png" alt="Load Shedding and Power Outage Management System"
+                  style="width:100%;height:100%;object-fit:contain;">
+              </div>
+              <div class="body"><span class="badge">Featured</span>
+                <h3>Load Sheeding and Power Outage Management System</h3>
+                <p>People often don’t know when and for how long their area will lose power, which makes it hard to plan
+                  their day. This web app lets users check load-shedding schedules and live outage status for their
+                  area, while administrators can add and update outages in one place.</p>
+                <div class="tags"><span class="tag">JavaScript</span><span class="tag">React</span><span
+                    class="tag">Vite</span><span class="tag">Tailwind CSS</span></div>
+              </div>
+              <div class="links"><a href="https://loadshedding-management.netlify.app/" target="_blank" rel="noopener noreferrer">Live site <span
+                    aria-hidden="true">↗</span></a><a
+                  href="https://github.com/HaMimFerdowsh/Frontend---Load-Shedding-Power-Outage-Management-System" target="_blank" rel="noopener noreferrer">Source
+                  <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="card spot" data-cat="Web">
+              <div class="shot" role="img" aria-label="Screenshot of Drinks">
+                <img src="img/drinks.png" alt="Drinks Shop"
+                  style="width:100%;height:100%;object-fit:contain;">
+              </div>
+              <div class="body">
+                <h3>Drink shop</h3>
+                <p>A Drink Shop application that allows users to browse drinks, manage their shopping cart, place orders, and track their order history.</p>
+                <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                    class="tag">JavaScript</span></div>
+              </div>
+              <div class="links"><a href="https://hamimferdowsh.github.io/Drink-Shop/" target="_blank">Live link<span aria-hidden="true">↗</span></a><a href="https://github.com/HaMimFerdowsh/Drink-Shop" target="_blank">Source <span
+                    aria-hidden="true">↗</span></a></div>
+            <!-- </article>
+            <article class="card spot" data-cat="Web">
+              <div class="shot" role="img" aria-label="Placeholder preview of a hardware project">
+                <div class="m-board"><i></i><i class="hi"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i
+                    class="hi"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hi"></i><i></i></div>
+              </div>
+              <div class="body">
+                <h3>Project Three</h3>
+                <p>One sentence on the device, the firmware and what it does.</p>
+                <div class="tags"><span class="tag">C++</span><span class="tag">ESP32</span><span
+                    class="tag">MQTT</span></div>
+              </div>
+              <div class="links"><a href="#">Write-up <span aria-hidden="true">↗</span></a><a href="#">Source <span
+                    aria-hidden="true">↗</span></a></div>
+            </article> -->
+            <!-- If you want to add your more project then add here on <article>...</article> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="stack">
+        <div class="sec-head">
+          <div class="crumb">portfolio / <b>stack</b></div>
+          <h2>The tools I reach for first</h2>
+          <p>Chosen for speed, reliability and how good they feel to use.</p>
+        </div>
+        <div class="stack">
+          <div class="group spot">
+            <h3>Languages</h3>
+            <div class="tags"><span class="tag big">C</span><span class="tag big">C++</span><span
+                class="tag big">Python</span><span class="tag big">JavaScript</span></div>
+          </div>
+          <div class="group spot">
+            <h3>Frontend</h3>
+            <div class="tags"><span class="tag big">React</span><span
+                class="tag big">Tailwind CSS</span><span class="tag big">React Hot Toast</span><span class="tag big">Vite</span></div>
+          </div>
+          <div class="group spot">
+            <h3>Backend and data</h3>
+            <div class="tags"><span class="tag big">FastAPI</span><span class="tag big">PostgreSQL</span><span
+                class="tag big">MySQL</span></div>
+          </div>
+          <div class="group spot">
+            <h3>Infrastructure</h3>
+            <div class="tags"><span class="tag big">Git</span><span class="tag big">Github</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="experience">
+        <div class="sec-head">
+          <div class="crumb">portfolio / <b>experience</b></div>
+          <h2>Where I have worked</h2>
+          <p>Most recent first.</p>
+        </div>
+        <ol class="tl">
+          <li><span class="when">[YEAR] to present</span>
+            <h3>[Job title], [Company]</h3>
+            <p>What you own, the scale you work at and one result you are proud of.</p>
+          </li>
+          <li><span class="when">[YEAR] to [YEAR]</span>
+            <h3>[Job title], [Company]</h3>
+            <p>What you built and what changed because of it.</p>
+          </li>
+          <li><span class="when">[YEAR] to [YEAR]</span>
+            <h3>[Degree or first role], [Institution]</h3>
+            <p>A short line on where it started.</p>
+          </li>
+        </ol>
+      </section> -->
+
+      <!-- <section id="writing">
+        <div class="sec-head">
+          <div class="crumb">portfolio / <b>writing</b></div>
+          <h2>Notes on engineering and gadgets</h2>
+          <p>Short write-ups from projects and experiments.</p>
+        </div>
+        <div class="list">
+          <a class="row" href="#">
+            <h3>[Post title about an engineering lesson]</h3><span class="meta">[MMM YYYY] · [N] min read</span>
+          </a>
+          <a class="row" href="#">
+            <h3>[Post title about a gadget or tool review]</h3><span class="meta">[MMM YYYY] · [N] min read</span>
+          </a>
+          <a class="row" href="#">
+            <h3>[Post title about a project teardown]</h3><span class="meta">[MMM YYYY] · [N] min read</span>
+          </a>
+        </div>
+      </section> -->
+
+      <section id="contact">
+        <div class="contact">
+          <h2>Have a project in mind?</h2>
+          <div class="mail">
+            <div class="crumb">Email me</div>
+            <code id="email">hamimferdowsh100@gmail.com</code>
+            <div class="row2">
+              <button class="btn primary" id="copyBtn" type="button">Copy email</button>
+              <a class="btn" href="https://github.com/HaMimFerdowsh" target="_blank">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/ha-mim-ferdowsh" target="_blank">LinkedIn</a>
+            </div>
+            <span class="note" id="note" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="foot"><span>© 2026 Md. Ha-Mim Ferdowsh</span><span>[DHAKA, BANGLADESH]</span></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="pal" id="pal" hidden>
+    <div class="pal-box" role="dialog" aria-modal="true" aria-label="Quick jump">
+      <input id="palInput" type="text" placeholder="Jump to a section or run an action" autocomplete="off"
+        aria-label="Search sections and actions">
+      <ul id="palList"></ul>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
