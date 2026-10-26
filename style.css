@@ -112,7 +112,7 @@ section{scroll-margin-top:28px;display:flex;flex-direction:column;gap:30px;min-w
 .now p{font-size:15px;color:var(--fg)}
 
 /* tech strip */
-.strip{position:relative;overflow:hidden;border-block:1px solid var(--line);padding:18px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.strip{position:relative;overflow:hidden;min-width:0;max-width:100%;border-block:1px solid var(--line);padding:18px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .track{display:flex;width:max-content;animation:run 38s linear infinite}
 .strip:hover .track{animation-play-state:paused}
 .track span{font-family:var(--mono);font-size:15px;color:var(--muted);padding:0 28px;white-space:nowrap;display:inline-flex;align-items:center;gap:56px}
@@ -215,7 +215,11 @@ section{scroll-margin-top:28px;display:flex;flex-direction:column;gap:30px;min-w
   .hero{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:900px){
-  .shell{flex-direction:column}
+  .shell{flex-direction:column;align-items:stretch}
+  .main>*{min-width:0;max-width:100%}
+  .hero h1{font-size:clamp(36px,11vw,52px)}
+  .code{font-size:12px}
+  .contact h2{max-width:none}
   .side{flex:none;width:100%;height:auto;position:sticky;top:env(safe-area-inset-top,0px);z-index:50;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:8px max(16px,env(safe-area-inset-right,0px)) 4px max(16px,env(safe-area-inset-left,0px));border-right:0;border-bottom:1px solid var(--line)}
   .kbtn{order:2;margin-left:auto;min-width:44px;padding:0 12px}
   .kbtn .kt,.kbtn kbd{display:none}
@@ -238,4 +242,12 @@ section{scroll-margin-top:28px;display:flex;flex-direction:column;gap:30px;min-w
   html{scroll-behavior:auto}
   .track,.pulse,.caret{animation:none}
   .card:hover,.btn:hover{transform:none}
+}
+@media (max-width:900px){
+  .shell{flex-direction:column;align-items:stretch}
+  .main>*{min-width:0;max-width:100%}
+  .strip{min-width:0;max-width:100%}
+  .hero h1{font-size:clamp(36px,11vw,52px)}
+  .code{font-size:12px}
+  .contact h2{max-width:none}
 }
